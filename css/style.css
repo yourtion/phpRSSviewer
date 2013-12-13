@@ -31,22 +31,153 @@ q:before,q:after {
 abbr,acronym { border: 0;
 }
 /* Reset done */
+html{
+	font-size: 16px;
+}
 img{
 	max-width: 100%;
 }
 li{
-	margin : 0;
 	padding : 0;
 	list-style : none;
 }
-
-#aList li{
-	max-width: 120px;
-	margin: 10px;
+a{
+	text-decoration: none;
+}
+.clean{
+	clear: both;
+}
+/* index */
+#aHeader{
 	text-align: center;
-	float: left;
+	background-color: #09c3ca;
+}
+#aHeader img{
+	width: 50%;
+	margin: 12px auto;
+	padding: 5px 0;
+}
+#aContent{
+	clear: both;
+	margin: 0 auto;
+	text-align: center;
+	width: 90%;
+}
+
+#aList{
+	position: relative;
+	line-height: 0;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	clear: both;
 
 }
+#aList li{
+	margin: 3%;
+	text-align: center;
+	float: left;
+	width: 27%;
+}
+#aList img,
+.lavatar img{
+	border: 1px #ccc solid;
+	border-radius: 8px;
+	box-shadow: 1px 1px 2px #ccc;
+}
+.aListLink{
+	display: block;
+}
+#lHeader h2,
 #aList h2{
-	padding : 5px;
+	color: #555;
+	font-size: 10px;
+	font-size: 0.9rem;
+	padding : 4px 0;
+	width: 100%;
+	line-height: 120%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	z-index: 10;
+	text-align: center;
+	max-width: 180px;
+	margin: 0 auto;
+}
+#aList h2 a{
+	color: #555;
+}
+
+#lHeader{
+	margin: 32px auto;
+}
+#lHeader .lavatar,
+#lHeader .lprofile{
+	float: left;
+}
+.lavatar{
+	width: 25%;
+	margin:0 8%;
+	text-align: center;
+}
+#aHeader img{
+	margin: 0;
+}
+.lprofile{
+	width: 46%;
+	height: 100px;
+	background: rgba(0,0,0,0.5);
+	margin: 0 5% 0 0 ;
+	color: #fff;
+	font-size: 10px;
+	font-size: 0.9rem;
+	padding: 1% 2%;
+	line-height: 130%;
+	text-align: justify;
+	overflow: hidden;
+	border: 1px #ccc solid;
+	border-radius: 8px;
+}
+#lContent{
+	margin:5% auto;
+	width: 84%;
+}
+#lContent li{
+	height: 100px;
+  margin: 9px 0;
+	text-align: justify;
+}
+#lContent span{
+	font-size: 8px;
+	font-size: 0.8rem;
+	display: inherit;
+	color: #fff;
+	background: rgba(0,0,0,0.5);
+	width: 30%;
+	padding: 2px 5px;
+	text-align: center;
+}
+#lContent a{
+	height:44px;
+	display: inherit;
+	color: #fff;
+	font-size: 12px;
+	font-size: 1rem;
+	background: rgba(0,0,0,0.3);
+	padding: 10px 15px;
+}
+
+
+#vContent{
+	margin: 2%;
+	text-align: center;
+}
+
+#vContent h1{
+	margin: 2%;
+	font-size: 1.4rem;
+}
+#vContent p{
+	margin: 1%;
+	font-size: 1rem;
+	text-align: justify;
 }

@@ -1,14 +1,14 @@
 <?php
 function listAuthor($user, $name ,$avatar){
 	$output = '<li><div class="listCard">';
-	$output .='<a href="list.php?author='.$user.'"><img src="'.$avatar.'" /></a>';
-	$output .= '<a href="list.php?author='.$user.'"><h2>'.$name.'</h2></a>';
-	$output .= '</div></li>';
+	$output .='<a class="aListLink" href="list.php?author='.$user.'"><img src="'.$avatar.'" /></a>';
+	$output .='<h2><a href="list.php?author='.$user.'">'.$name.'</a></h2>';
 	$output .= '</div></li>';
 	return $output;
 }
-function listItems($title,$guid,$author){
+function listItems($title,$guid,$author,$time){
 	$output = '<li>';
+	$output .= '<span>'.$time.'</span>';
 	$output .= '<a href="view.php?guid='.urlencode($guid).'&author='.$author.'">'.$title.'</a>';
 	$output .= '</li>';
 	return $output;

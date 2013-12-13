@@ -16,6 +16,9 @@ $rss->CDATA='content';        //设置处理CDATA信息。默认为nochange。另有strip和co
 $rs=$rss->Get($rssURL);        //处理RSS并获取内容
 //var_dump($rs);                //输出
 //echo urldecode($_GET['guid']);
+?>
+<div id="vContent">
+<?php
 foreach ($rs['items'] as $value){
 	if($value['guid'] ==urldecode($_GET['guid']) ){
 		echo '<h1>'.$value['title'].'</h1>';
@@ -26,4 +29,12 @@ foreach ($rs['items'] as $value){
 		echo '<h1>'.$content.'</h1>';
 	}
 }
+?>
+</div>
+<style>
+	body{
+		background: #fff !important;
+	}
+</style>
+<?php
 include('footer.php');

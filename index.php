@@ -1,6 +1,11 @@
+<?php
+include_once('header.php');
+?>
+<div id="aHeader"><img src="images/mcmh.png"></div>
+<div class="clean"></div>
+<div id="aContent">
 <ul id="aList">
-	<?php
-	include_once('header.php');
+<?php
 	$sourse = file_get_contents("rss.json");
 	$rssList =json_decode($sourse,true);
 	//var_dump($rssList) ;
@@ -9,6 +14,9 @@
 	}
 	?>
 </ul>
+	<div class="clean"></div>
+</div>
+
 <?php
 include_once('footer.php');
 ?>
