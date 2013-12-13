@@ -15,14 +15,15 @@ $rss->stripHTML=false;        //设置过滤html脚本。默认为false，即不
 $rss->CDATA='content';        //设置处理CDATA信息。默认为nochange。另有strip和content两个选项
 $rs=$rss->Get($rssURL);        //处理RSS并获取内容
 //var_dump($rs);                //输出
+
 ?>
 <div id="bg"></div>
 <div id="lHeader">
 	<div class="lavatar">
 	<img src="<?php echo $rssList[$_GET['author']]['avatar']; ?>" alt=""/>
-	<h2><?php echo $rssList[$_GET['author']]['author']; ?></h2>
 	</div>
 	<div class="lprofile">
+		<h2><?php echo $rssList[$_GET['author']]['author']; ?></h2>
 		<?php echo $rssList[$_GET['author']]['profile']; ?>
 	</div>
 	<div class="clean"></div>
@@ -33,13 +34,8 @@ $rs=$rss->Get($rssURL);        //处理RSS并获取内容
 <ul>
 <?php
 foreach ($rs['items'] as $value){
-//	preg_match_all('/<\s*img\s+[^>]*?src\s*=\s*(\'|\")(.*?)\\1[^>]*?\/?\s*>/i',$value['content:encoded'],$match);
-//	$pattern = "/height=\"[0-9]*\"/";
-//	$content = preg_replace($pattern, "",$match[0][1]);
-//	$pattern = "/width=\"[0-9]*\"/";
-//	$content = preg_replace($pattern, '', $content);
-//	echo $content;
-	echo listItems($value['title'],$value['guid'],$_GET['author'],date("Y-m-d", $value['pubDate']));
+	preg_match_all('/<img.+src=\"?(.+\.(jpg|gif|bmp|bnp|png))\"?.+>/i',$value['content:encoded'],$match);
+	echo listItems($value['title'],$value['guid'],$_GET['author'],$match[1][0]);
 }
 ?>
 </ul>

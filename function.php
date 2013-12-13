@@ -6,10 +6,10 @@ function listAuthor($user, $name ,$avatar){
 	$output .= '</div></li>';
 	return $output;
 }
-function listItems($title,$guid,$author,$time){
+function listItems($title,$guid,$author,$img){
 	$output = '<li>';
-	$output .= '<span>'.$time.'</span>';
-	$output .= '<a href="view.php?guid='.urlencode($guid).'&author='.$author.'">'.$title.'</a>';
-	$output .= '</li>';
+	//$output .= '<span>'.$time.'</span>';
+	$output .= '<a href="view.php?guid='.urlencode($guid).'&author='.$author.'"><div  class="lImg" ><img src="'.$img.'" /></div>';
+	$output .= $title.'</a></li>';
 	return $output;
 }
