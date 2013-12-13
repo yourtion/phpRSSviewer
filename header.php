@@ -3,7 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-	<title></title>
+	<link rel="apple-touch-icon-precomposed" href="icon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon-precomposed" href="icon/apple-touch-icon.png" sizes="114x114">
+	<link rel="SHORTCUT ICON" href="/icon/favicon.ico">
+	<title>墨筹漫画</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
