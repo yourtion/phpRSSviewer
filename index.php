@@ -8,12 +8,15 @@ include_once('header.php');
 	</div>
 	<!-- /header -->
 	<div data-role="content">
-		<dl>
-			<dt>Swipe <span>verb</span></dt>
-			<dd><b>1.</b> to strike or move with a sweeping motion</dd>
-		</dl>
-		<ul data-role="listview">
+		<ul data-role="listview" id="listAll">
+			<?php
+			$rs = getRSS('http://manhua.morechou.com/feed');
+			foreach ($rs['items'] as $value){
+				preg_match_all('/<img.*src="(.*)"\\s*.*>/iU',$value['content:encoded'],$match);
+				echo itemList($value['title'],$value['guid'],$_GET['author'],$match[1][0]);
 
+			}
+			?>
 		</ul>
 	</div>
 	<!-- /content -->

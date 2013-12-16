@@ -1,5 +1,12 @@
 <?php
 include_once('lastRSS.php');
+function itemList($title,$guid,$author,$img){
+	$output = '<li><a href="view.php?guid='.urlencode($guid).'&author='.$author.'">';
+	$output .= '<img src="'.$img.'?imageView/1/w/200/h/180/q/85">';
+	$output .= '<h2>'.$title.'</h2>';
+	$output .= '</a></li>';
+	return $output;
+}
 function listAuthor($user, $name ,$avatar){
 	$output = '<li><div class="listCard">';
 	$output .='<a class="aListLink" href="list.php?author='.$user.'"><img src="'.$avatar.'" /></a>';
