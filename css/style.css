@@ -1,86 +1,3 @@
-<<<<<<< HEAD
-
-#aList{
-	position: relative;
-	line-height: 0;
-	margin: 0 auto;
-	margin-bottom: 10px;
-	clear: both;
-
-}
-#aList li{
-	margin: 3%;
-	text-align: center;
-	float: left;
-	width: 27%;
-}
-#aList img,
-.lavatar img{
-	border: 1px #ccc solid;
-	border-radius: 8px;
-	box-shadow: 1px 1px 2px #ccc;
-}
-.aListLink{
-	display: block;
-}
-#aList h2{
-	color: #555;
-	font-size: 10px;
-	font-size: 0.9rem;
-	padding : 4px 0;
-	width: 100%;
-	line-height: 120%;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	z-index: 10;
-	text-align: center;
-	max-width: 180px;
-	margin: 0 auto;
-}
-#aList h2 a{
-	color: #555;
-}
-
-<<<<<<< Updated upstream
-#lHeader{
-	margin: 0 auto;
-	padding: 32px 0 10px;
-	background: url("../images/beijing.jpg") center center;
-}
-#lHeader .lavatar,
-#lHeader .lprofile{
-	float: left;
-}
-.lavatar{
-	width: 25%;
-	margin:0 8%;
-	text-align: center;
-}
-#aHeader img{
-	margin: 0;
-}
-.lprofile{
-	width: 52%;
-	height: 100px;
-	margin: 0 5% 0 0 ;
-	color: #555;
-	font-size: 10px;
-	font-size: 0.9rem;
-	padding: 1% 0;
-	line-height: 130%;
-	text-align: justify;
-	overflow: hidden;
-}
-#lContent{
-	margin:0 auto 5%;
-	width:100%;
-}
-#lContent li{
-	height: 80px;
-  margin: 0;
-=======
-
 #left-panel ul li img{
 	width: 70px;
 	margin: 5px;
@@ -90,33 +7,11 @@
 }
 #listAll li h2{
 	white-space: normal;
->>>>>>> refs/heads/jqmobile
 	text-align: justify;
 }
-<<<<<<< HEAD
-.lImg{
-	width:15%;
-	height: 60px;
-	text-align: center;
-	float: left;
-	margin: 0 3%;
-	vertical-align: middle;
-}
-.lImg img{
-	max-width:100%;
-	max-height:60px;
-}
-#vContent h1{
-	margin: 2%;
-	font-size: 1.4rem;
-}
-#vContent p{
-	margin: 1%;
-	font-size: 1rem;
-	text-align: justify;
-=======
 #listAll li img{
 	margin: 5px;
->>>>>>> refs/heads/jqmobile
-
+}
+#viewContent img{
+	max-width: 100%;
 }
