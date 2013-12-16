@@ -7,6 +7,13 @@ function listAuthor($user, $name ,$avatar){
 	$output .= '</div></li>';
 	return $output;
 }
+function panelAuthor($user, $name ,$avatar,$profile){
+	$output = '<li><a href="list.php?author='.$user.'">';
+	$output .= '<img src="'.$avatar.'">';
+	$output .= '<h2>'.$name.'</h2><p>'.$profile.'</p>';
+	$output .= '</a></li>';
+	return $output;
+}
 function listItems($title,$guid,$author,$img){
 	$output = '<li>';
 	//$output .= '<span>'.$time.'</span>';

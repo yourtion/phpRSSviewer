@@ -181,3 +181,17 @@ a{
 	font-size: 1rem;
 	text-align: justify;
 }
+
+
+
+
+
+/*new style*/
+#left-panel ul li img{
+	width: 70px;
+	margin: 5px;
+	-webkit-border-radius: 70px;
+	-moz-border-radius: 70px;
+	border-radius: 70px;
+
+}
