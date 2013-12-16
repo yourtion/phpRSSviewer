@@ -8,6 +8,10 @@
 	<link rel="SHORTCUT ICON" href="/icon/favicon.ico">
 	<title>墨筹漫画</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="jqmobile/jquery.mobile-1.4.0-rc.1.min.css" />
+	<link rel="stylesheet" type="text/css" href="jqmobile/jquery.mobile.inline-png-1.4.0-rc.1.min.css" />
+	<script type="text/javascript" src="jqmobile/jquery.min.js"></script>
+	<script type="text/javascript" src="jqmobile/jquery.mobile-1.4.0-rc.1.min.js"></script>
 </head>
 <body>
 <?php
