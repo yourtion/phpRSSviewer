@@ -9,7 +9,7 @@ function listAuthor($user, $name ,$avatar){
 function listItems($title,$guid,$author,$img){
 	$output = '<li>';
 	//$output .= '<span>'.$time.'</span>';
-	$output .= '<a href="view.php?guid='.urlencode($guid).'&author='.$author.'"><div  class="lImg" ><img src="'.$img.'" /></div>';
+	$output .= '<a href="view.php?guid='.urlencode($guid).'&author='.$author.'"><div  class="lImg" ><img src="'.$img.'!mappList" /></div>';
 	$output .= $title.'</a></li>';
 	return $output;
 }
