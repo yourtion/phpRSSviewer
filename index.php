@@ -18,6 +18,7 @@ include_once('header.php');
 			?>
 		</ul>
 	</div>
+
 	<!-- /content -->
 	<?php include_once('panel.php') ?>
 	<!-- /panel -->

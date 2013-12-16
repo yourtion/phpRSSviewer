@@ -7,7 +7,7 @@ $rs = getRSS($rssList[$_GET['author']]['sourse']);
 	<div data-role="page" id="list">
 		<div data-role="header" >
 			<a href="#left-panel" data-icon="bars" data-iconpos="notext">Menu</a>
-			<h1><?php echo $rssList[$_GET['author']]['author']; ?>的漫画</h1>
+			<h1>@<?php echo $rssList[$_GET['author']]['author']; ?> 的漫画</h1>
 		</div>
 		<!-- /header -->
 		<div data-role="content">

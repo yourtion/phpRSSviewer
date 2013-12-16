@@ -1,4 +1,4 @@
-<div data-role="panel" id="left-panel" data-theme="a" data-dom-cache="true">
+<div data-role="panel" id="left-panel" data-theme="a" data-dom-cache="true" >
 		<ul data-role="listview" data-filter="true" data-inset="true" data-filter-placeholder="作者搜索">
 			<?php
 			if($_SERVER["SCRIPT_NAME"] != "/index.php"){

@@ -10,6 +10,7 @@ if($_GET['author'] != ""){
 	$rs = getRSS('http://manhua.morechou.com/feed');
 }
 $con = "";
+$author ="";
 $title = "";
 foreach ($rs['items'] as $value){
 	if($value['guid'] ==urldecode($_GET['guid']) ){
@@ -17,18 +18,20 @@ foreach ($rs['items'] as $value){
 		$content = preg_replace($pattern, "", $value['content:encoded']);
 		$pattern = "/width=\"[0-9]*\"/";
 		$content = preg_replace($pattern, '', $content);
-		$title = str_replace($value['dc:creator'],"",$value['title']);
+		$author = $value['dc:creator'];
+		$title = $value['title'];
 		$con = $content;
 	}
 }
 ?>
 <div data-role="page" id="view">
-	<div data-role="header" >
+	<div data-role="header" id="pageHeader">
 		<a href="#left-panel" data-icon="bars" data-iconpos="notext">Menu</a>
-		<h1><?php echo $title; ?></h1>
+		<h1>@<?php echo $author; ?> 的漫画</h1>
 	</div>
 	<!-- /header -->
 	<div data-role="content" id="viewContent">
+		<h3><?php echo $title; ?></h3>
 		<?php
 			echo $con;
 		?>
