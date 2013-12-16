@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 #aList{
 	position: relative;
@@ -78,24 +79,21 @@
 #lContent li{
 	height: 80px;
   margin: 0;
+=======
+
+#left-panel ul li img{
+	width: 70px;
+	margin: 5px;
+	-webkit-border-radius: 70px;
+	-moz-border-radius: 70px;
+	border-radius: 70px;
+}
+#listAll li h2{
+	white-space: normal;
+>>>>>>> refs/heads/jqmobile
 	text-align: justify;
-	background:#eee;
-	border-bottom: #ccc 1px solid;
 }
-#lContent li:nth-child(odd){
-	background: #fafafa;
-}
-#lContent a{
-	display: inherit;
-	color: #555;
-	font-size: 12px;
-	font-size: 1rem;
-	padding: 10px 15px;
-}
-#vContent{
-	margin: 2%;
-	text-align: center;
-}
+<<<<<<< HEAD
 .lImg{
 	width:15%;
 	height: 60px;
@@ -116,5 +114,9 @@
 	margin: 1%;
 	font-size: 1rem;
 	text-align: justify;
+=======
+#listAll li img{
+	margin: 5px;
+>>>>>>> refs/heads/jqmobile
 
 }
