@@ -24,7 +24,7 @@ $rs = getRSS($rssList[$_GET['author']]['sourse']);
 <ul>
 <?php
 foreach ($rs['items'] as $value){
-	preg_match_all('/<img.+src=\"?(.+\.(jpg|gif|bmp|bnp|png))\"?.+>/i',$value['content:encoded'],$match);
+	preg_match_all('/<img.*src="(.*)"\\s*.*>/iU',$value['content:encoded'],$match);
 	echo listItems($value['title'],$value['guid'],$_GET['author'],$match[1][0]);
 }
 ?>
